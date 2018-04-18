@@ -4,21 +4,21 @@ server:
 
 # 数据库配置
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/spvpft
-    username: root
-    password: 123456
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/spvpft
+#    username: root
+#    password: 123456
 
   # Thymeleaf模板的配置
   thymeleaf:
     prefix: classpath:/templates/
     suffix: .html
-    mode: HTML5
     encoding: utf-8
     servlet:
       content-type: text/html
     cache: false
+    mode: HTML5
   resources:
     chain:
       strategy:
