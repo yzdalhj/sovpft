@@ -31,47 +31,43 @@
 			<div class="cross text-right">
 				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
 			</div>
-			<h2>Sovpft</h2>
+			<h2>导航</h2>
 			<nav>
 				<ul class="nav nav-pills nav-stacked">
 					<li>
-						<a href="#wrapper"><i class="fa fa-home"></i> 主页</a>
+						<a href="#wrapper"><i class="fa fa-home"></i>  主页</a>
 					</li>
 					<li>
-						<a href="#portfolio"><i class="fa fa-bookmark"></i>联合</a>
+						<a href="#portfolio"><i class="fa fa-bookmark"></i>  联合</a>
 					</li>
 					<li>
-						<a href="#services"><i class="fa fa-tasks"></i>服务</a>
+						<a href="#services"><i class="fa fa-tasks"></i>  服务</a>
 					</li>
 					<li>
-						<a href="#blog"><i class="fa fa-wordpress"></i>博客</a>
+						<a href="#blog"><i class="fa fa-wordpress"></i>  博客</a>
 					</li>
 					<li>
-						<a href="#testimonials"><i class="fa fa-thumbs-up"></i>点赞</a>
+						<a href="#testimonials"><i class="fa fa-thumbs-up"></i>  点赞</a>
 					</li>
 					<li>
-						<a href="#contact"><i class="fa fa-phone-square"></i>联系</a>
+						<a href="#contact"><i class="fa fa-phone-square"></i>  联系</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="social">
 				<h2>Stay Connected</h2>
 				<ul>
-					<li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-twitter-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-tumblr-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-google-plus-square fa-3x"></i></a></li>
+					<!--<li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>-->
 				</ul>
 			</div>
 		</div><!-- #drawer-right -->
 
 		<div id="wrapper">
-			
 			<div id="header" class="content-block header-wrapper">
 				<div class="header-wrapper-inner">
 					<section class="top clearfix">
 						<div class="pull-left">
-							<h1><a class="logo" href="index.html">Flusk</a></h1>
+							<h1><a class="logo" href="index.html">Sovpft</a></h1>
 						</div>
 						<div class="pull-right">
 							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
@@ -81,18 +77,18 @@
 						<div class="slogan">
 							Solves The&amp; Problem Fast
 						</div>
+						<input type="search" class="form-control form-control-white" onkeydown="onKeyDown(event)" id="subject" placeholder="在此处输入报错介绍">
 						<div class="secondary-slogan">
-							这个问题要这么来做。
+							做事不能一错再错。
 						</div>
 					</section>
 					<section class="bottom">
-						<a id="scrollToContent" href="#">
+						<a id="scrollToContent" href="#blog">
 							<img th:src="@{/images/arrow_down.png}">
 						</a>
 					</section>
 				</div>
 			</div><!-- header -->
-
 
 			<div class="content-block" id="blog">
 				<div class="container">
@@ -128,14 +124,7 @@
 					</section>
 				</div>
 			</div><!-- #blog -->
-
-
-
-
 		</div><!--/#wrapper-->
-
-
-
 
 		<script th:src="@{/js/jquery-2.1.3.min.js}"></script>
 		<script th:src="@{/js/jquery-migrate-1.2.1.min.js}"></script>
@@ -143,6 +132,8 @@
 		<script th:src="@{/js/jquery.actual.min.js}"></script>
 		<script th:src="@{/js/jquery.scrollTo.min.js}"></script>
 		<script th:src="@{/js/script.js}"></script>
+		<script type="text/javascript">
 
+		</script>
 	</body>
 </html>

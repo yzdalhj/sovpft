@@ -389,6 +389,11 @@ h1, h2, h3, h4, h5, h6{
 #contact h1{color: white}
 
 .form-control-white {
+	text-align: center;
+	margin:50px auto;
+	width: 60%;
+	height: 50px;
+	border-radius: 35px;
     background: transparent;
     color: white;
 }
