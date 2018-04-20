@@ -1,4 +1,4 @@
-package model;
+package sovptf.model;
 
 public class Person {
     private String name;

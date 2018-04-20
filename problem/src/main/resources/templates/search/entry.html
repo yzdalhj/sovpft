@@ -14,19 +14,17 @@
     <!-- css -->
     <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
-    <link rel="stylesheet" th:href="@{/css/style.css}" media="screen"/>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" th:href="@{/css/problem/normalize.css}" />
+    <link rel="stylesheet" th:href="@{/css/problem/default.css}">
+    <link rel="stylesheet" th:href="@{/fonts/problem/font-awesome-4.3.0/css/font-awesome.min.css}" />
+    <link rel="stylesheet" th:href="@{/css/problem/style1.css}" />
+    <link rel="stylesheet" th:href="@{/css/problem/entry.css}" media="screen"/>
+    <script th:src="@{/js/problem/modernizr.custom.js}"></script>
 
-    <!--[if lt IE 9]>
-    <script th:src="@{/js/html5shiv.js}"></script>
-    <script th:src="@{/js/respond.js}"></script>
-    <![endif]-->
-
-    <!--[if IE 8]>
-    <script th:src="@{/js/selectivizr.js}"></script>
-    <![endif]-->
 </head>
 
-<body>
+<body style="background: snow">
 <div id="drawer-right">
     <div class="cross text-right">
         <a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
@@ -64,140 +62,100 @@
 
 
 <div id="wrapper">
-    <div id="header" class="content-block">
-        <section class="top clearfix">
-            <div class="pull-left">
-                <h1><a class="logo" href="index.html">Flusk</a></h1>
-            </div>
-            <div class="pull-right">
+            <div class="pull-right hj-right" >
                 <a class="toggleDrawer" href="#"><i class="fa fa-bars fa-2x"></i></a>
             </div>
-        </section>
-    </div>
+</div>
     <!-- header -->
 </div><!--/#wrapper-->
 <input type="search" class="form-control hj-control-white" id="subject" placeholder="在此处输入报错介绍">
-<div class="hj-card">
-    <div class="hj-fl-top">
-        类型标签 ：
-        <label class="checkbox-inline">
-            <input type="checkbox" value="JAVA"> JAVA
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="Python"> Python
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="PHP"> PHP
-        </label>
-    </div>
-    <div class="hj-fl-cent">
-        使用框架 ：
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option1"> Spring
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option2"> ZoomKeepr
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option3"> Hodoop
-        </label>
-    </div>
-    <div class="hj-fl-bottom">
-        SQL类型 ：
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option1"> MySQL
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option2"> Oracle
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option3"> Redis
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option3"> monggoDB
-        </label>
-        <label class="checkbox-inline">
-            <input type="checkbox" value="option3"> SQLite
-        </label>
+div class="container">
+<div id="theSidebar" class="sidebar">
+    <div class="related">
+        <h3>分类</h3>
     </div>
 </div>
-<div class="hj-content">
-    <div class="row">
-        <div class="col-sm-3">
-            <a href="#" class="recent-work " style="margin-top: 20px;background-image:url(@{/images/rain_1-320x240.jpg})">
-                <span class="btn btn-o-white">Lorem Rocks</span>
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <span href="#">
-                <h2 class="content-text">Lorem Rocks</h2>
-                <span class="content-text-sm">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                </span>
-                </a>
-            </span>
-        </div>
-        <div class="col-sm-3">
-            <img class="content-right" th:src="@{/images/testimonial_11-190x190.jpg}"/>
-            <div class="hj-user">
-                <p style="font-weight:bold">王大离</p>
-                <p>我在遥望，月亮之上</p>
-                <p style="font-weight:bold">斗宗强者</p>
-                <p class="btn btn-o">去Ta的主页</p>
+<div id="theGrid" class="main">
+    <section class="grid">
+        <header class="top-bar">
+            <h2 class="top-bar__headline">目录</h2>
+            <div class="filter">
+                <span>排序方式:</span>
+                <span class="dropdown">默认</span>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <a href="#" class="recent-work " style="background-image:url(@{/images/rain_1-320x240.jpg})">
-                <span class="btn btn-o-white">Lorem Rocks</span>
-            </a>
-        </div>
-        <div class="col-sm-6">
-            <span href="#">
-                <h2 class="content-text">Lorem Rocks</h2>
-                <span class="content-text-sm">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
-                </span>
-                </a>
-            </span>
-        </div>
-        <div class="col-sm-3">
-            <img class="content-right" th:src="/images/testimonial_11-190x190.jpg"/>
-            <div class="hj-user">
-                <p style="font-weight:bold">王大离</p>
-                <p>我在遥望，月亮之上</p>
-                <p style="font-weight:bold">斗宗强者</p>
-                <p class="btn btn-o">去Ta的主页</p>
+        </header>
+        <a class="grid__item" href="#" errorId="0">
+            <h2 class="title title--preview">WEB ERRRO:404</h2>
+            <span class="title title--preview">无法打开网页</span>
+            <div class="loader"></div>
+            <div class="meta meta--preview">
+                <span class="meta__date"><i class="fa fa-calendar-o"></i> 9</span>
+                <span class="meta__reading-time"><i class="fa fa-clock-o"></i> 3</span>
             </div>
+        </a>
+        <a class="grid__item" href="#" errorId="1">
+            <h4 class="title title--preview">JAVA ERRRO:14342</h4>
+            <div class="loader"></div>
+            <div class="meta meta--preview">
+                <span class="meta__date"><i class="fa fa-calendar-o"></i> 7 </span>
+                <span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 </span>
+            </div>
+        </a>
+        <a class="grid__item" href="#" errorId="2">
+            <h4 class="title title--preview">JAVA ERRRO:14342</h4>
+            <div class="loader"></div>
+            <div class="meta meta--preview">
+                <span class="meta__date"><i class="fa fa-calendar-o"></i> 7 </span>
+                <span class="meta__reading-time"><i class="fa fa-clock-o"></i> 5 </span>
+            </div>
+        </a>
+        <footer class="page-meta">
+            <nav aria-label="Page navigation" style="text-align: -webkit-center;">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </section>
+    <section class="content">
+        <div class="scroll-wrap">
+            <article class="content__item">
+                <h2 class="title title--full">1111</h2>
+                <div class="meta meta--full">
+                    <br>
+                    <span class="meta__author">王大力</span>
+                    <span class="meta__date"><i class="fa fa-calendar-o"></i>1</span>
+                    <span class="meta__reading-time"><i class="fa fa-clock-o"></i>111</span>
+                </div>
+                <p>111</p>
+                <p>Excerpts from <a href="#">Totem and Taboo</a> by Sigmund Freud.</p>
+            </article>
         </div>
-    </div>
+        <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+    </section>
 </div>
-<!--分类视图-->
-<nav aria-label="Page navigation" style="text-align: -webkit-center;">
-    <ul class="pagination">
-        <li>
-            <a href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-        </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li>
-            <a href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+</div><!-- /container -->
+
     <!-- header -->
 <script th:src="@{/js/jquery-2.1.3.min.js}"></script>
-<script th:src="@{/js/jquery-migrate-1.2.1.min.js}"></script>
-<script th:src="@{/js/bootstrap.min.js}"></script>
-<script th:src="@{/js/jquery.actual.min.js}"></script>
-<script th:src="@{/js/jquery.scrollTo.min.js}"></script>
+<script th:src="@{//js/bootstrap.min.js}"></script>
 <script th:src="@{/js/script.js}"></script>
+<script th:src="@{/js/problem/classie.js}"></script>
+<script th:src="@{/js/problem/main.js}"></script>
 
 </body>
 </html>

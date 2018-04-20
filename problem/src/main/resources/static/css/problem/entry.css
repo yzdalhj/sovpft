@@ -1,0 +1,22 @@
+
+.hj-control-white{
+    text-align: center;
+    margin: 50px 30px 0px auto;
+    width: 60%;
+    height: 50px;
+    border-radius: 35px;
+    background: #3A4F52;
+    color: white;
+}
+
+.top{
+    height: 70px;
+}
+
+.sidebar{
+    z-index: 499;
+}
+
+.hj-right{
+    margin: 65px 40px 0px 0px;
+}
